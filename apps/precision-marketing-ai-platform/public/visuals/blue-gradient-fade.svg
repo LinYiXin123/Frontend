@@ -1,0 +1,24 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip)">
+    <rect width="1920" height="1080" fill="#FFFFFF"/>
+    <g filter="url(#blur)">
+      <ellipse cx="960" cy="128" rx="1636" ry="590" fill="#E6F4FF"/>
+      <ellipse cx="988" cy="-36" rx="1540" ry="520" fill="#BAE0FF" fill-opacity=".88"/>
+      <ellipse cx="960" cy="-156" rx="1350" ry="470" fill="#69B1FF" fill-opacity=".62"/>
+      <ellipse cx="960" cy="-286" rx="1120" ry="390" fill="#1677FF" fill-opacity=".38"/>
+    </g>
+    <rect y="650" width="1920" height="430" fill="url(#fade)"/>
+  </g>
+  <defs>
+    <filter id="blur" x="-930" y="-1120" width="3820" height="1980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="125"/>
+    </filter>
+    <linearGradient id="fade" x1="960" y1="650" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect width="1920" height="1080" fill="#FFFFFF"/>
+    </clipPath>
+  </defs>
+</svg>
