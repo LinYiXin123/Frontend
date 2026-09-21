@@ -1,0 +1,67 @@
+.environment-link-reminder-action {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:10px;
+  margin-top:13px;
+  padding-top:12px;
+  border-top:1px solid #edf1f6;
+}
+
+.environment-link-reminder-action span {
+  color:#8a94a6;
+  font-size:12px;
+  font-weight:700;
+}
+
+.environment-link-reminder-action button {
+  border:1px solid #b8cff8;
+  border-radius:9px;
+  padding:8px 11px;
+  color:#1f62da;
+  background:#f7faff;
+  font-size:12px;
+  font-weight:800;
+  line-height:1;
+  cursor:pointer;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease;
+}
+
+.environment-link-reminder-action button:hover:not(:disabled) {
+  border-color:#5b91ee;
+  background:#edf4ff;
+  transform:translateY(-1px);
+}
+
+.environment-link-reminder-action button:focus-visible {
+  outline:2px solid #1677ff;
+  outline-offset:2px;
+}
+
+.environment-link-reminder-action button:disabled {
+  cursor:wait;
+  opacity:.7;
+}
+
+.environment-link-reminder-toast {
+  position:fixed;
+  z-index:10020;
+  right:22px;
+  bottom:28px;
+  max-width:min(360px,calc(100vw - 44px));
+  padding:11px 14px;
+  color:#fff;
+  background:#233d68;
+  border:1px solid #6e98dd;
+  border-radius:10px;
+  box-shadow:0 16px 38px rgba(24,56,105,.28);
+  font-size:13px;
+  font-weight:700;
+  line-height:1.5;
+}
+
+@media (max-width: 560px) {
+  .environment-link-reminder-action {
+    justify-content:space-between;
+  }
+}

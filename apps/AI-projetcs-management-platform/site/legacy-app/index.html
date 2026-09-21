@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="theme-color" content="#f6f8fc" />
+    <link rel="icon" type="image/png" href="/image/project-management-icon.png?v=20260907" />
+    <link rel="apple-touch-icon" href="/image/project-management-icon.png?v=20260907" />
+    <title>AI创新部项目管理平台</title>
+    <script src="/assets/legacy-stability.js?v=blank-recovery-20260707-hidden-tab-anim-unfreeze-v4"></script>
+    <script src="/assets/legacy-dashboard-bootstrap.js?v=dashboard-fast-shell-v1-20260918"></script>
+    <script src="/assets/legacy-feature-flags.js?v=hide-ai-navigation-20260714-delivery-ui-retired-v1-tools-retired-v1-my-projects-retired-v1-20260906"></script>
+    <script src="/assets/legacy-nav-stability.js?v=hide-ai-navigation-20260714"></script>
+    <script src="/assets/legacy-project-status-confirm.js?v=release-readiness-gate-v3-archive-reason-20260719-self-check-retired-v1-toc-readiness-v1"></script>
+    <!-- The server-auth bridge validates /api/me and prepares the legacy UI before
+         importing the exact entry URL used by lazy chunks. Do not add a query string
+         to index-CgLvW7V7.js or the browser can create a second React runtime. -->
+    <script type="module" crossorigin src="/assets/legacy-server-auth.js?v=runtime-project-detail-bridge-20260714-logout-bridge-20260716-role-name-v1-20260905-group-delivery-copy-v1-perspective-switch-v1-admin-project-actions-v1-auth-bootstrap-v1"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-p0TD3YlS.css?v=manual-registration-removed-20260720" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-overrides.css?v=project-plan-dates-v1-retire-detail-self-check-v1-20260905-member-role-inline-v1-perspective-switch-v1-o2o-app-shell-v1-period-filter-v1-project-period-picker-v1-milestone-period-bound-v1-schedule-save-feedback-v1-schedule-save-delegated-v1-admin-brand-member-lockup-v1-directory-profile-sync-v1-progress-primary-leaf-v1-sidebar-logo-circle-mask-v1-dashboard-loader-toc-v1-runtime-loaders-toc-v1-sidebar-row-height-v1-project-delete-toc-v1-ai-chat-progress-v1-project-profile-toc-v1-dashboard-inline-loading-v1-scroll-render-stability-v1-dashboard-scroll-paint-stability-v1-runtime-topology-shell-plain-v1-contribution-panel-override-consolidated-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-project-next-action.css?v=project-next-action-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-project-member-feishu-links.css?v=project-member-feishu-links-v2" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-environment-link-reminder.css?v=environment-link-reminder-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-ci-customer-status.css?v=ci-customer-status-v4" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-dashboard-activity-projects.css?v=full-project-list-v1-20260916-sequence-owner-chat-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-activity-details.css?v=activity-table-motion6-search-input-layout-20260714" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-post-launch-reviews.css?v=post-launch-review-v2-20260715" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-notification-outbox.css?v=notification-outbox-v1-20260717" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-project-operations.css?v=project-operations-v31-timeline-responsive-20260722-toc-loader-v1-secondary-analysis-v1-health-cards-v1-inspector-on-demand-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-delivery-quality.css?v=delivery-quality-loading-v4-visible" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-progress-overview.css?v=progress-overview-v1-20260914-toc-hero-v5-toc-loader-v1-pagination-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-archived-audit.css?v=archived-lifecycle-audit-v22-summary-toc-v1-search-pagination-v1-page-size-select-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-alert-workbench.css?v=alert-handling-workbench-v14-no-flash-inspector-slide-20260720-queue-columns-v1-field-annotations-removed-v1-toc-loader-v1-toc-workbench-v1-trend-reading-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-notification-workbench.css?v=notification-workbench-v26-antd-calendar-20260723-field-annotations-removed-v1-toc-loader-v1-toc-message-center-v1-notification-date-range-v1-notification-filter-simplify-v1-notification-inspector-unified-v1" />
+    <link rel="stylesheet" crossorigin href="/assets/legacy-antd-calendar.css?v=antd-calendar-v1-20260723-period-filter-v1-project-period-picker-v1-milestone-period-bound-v1-period-range-preserve-native-inputs-v1" />
+    <script src="/assets/legacy-sidebar-polish.js?v=collapsed-parent-active-v1-20260721-runtime-monitor-ui-hide-project-registration-20260714-collapsed-flyout-20260716-account-logout-20260716-account-logout2-20260716-manual-registration-removed-20260720-project-detail-nav-removed-v1-20260723-delivery-ui-retired-v1-tools-retired-v1-20260906-progress-overview-v1-perspective-switch-v1-o2o-app-shell-v1-admin-brand-member-lockup-v1-login-icon-v1-navigation-guide-retired-v1-delivery-quality-nav-icon-v1-sidebar-layout-control-route-preserve-v1" defer></script>
+    <script src="/assets/legacy-runtime-monitor.js?v=runtime-search-only-v2-notification-pagination-v2-duration-seconds-v1-runtime-compact-header-v1-20260721-incident-viewport-portal-v1-sidebar-route-preserve-v1-business-page-autodetect-v1-runtime-incident-team-chat-v1-request-timeout-v1-display-translation-v1-delivery-anchor-retired-v1-feishu-receive-gate-v1-toc-loaders-v1-delivery-quality-loading-v3-runtime-view-switch-recovery-v1-hidden-tab-quality-body-v1-project-owner-wording-v1-delivery-quality-loader-visible-v1-delivery-quality-business-copy-v1-delivery-quality-rule-copy-v1-notification-wording-v1-sidebar-layout-control-route-preserve-v1-runtime-first-snapshot-complete-v1" defer></script>
+    <script src="/assets/legacy-code-quality-icons.js?v=shared-legacy-icons-v1-20260906" defer></script>
+    <script src="/assets/legacy-project-operations-charts.js?v=echarts-6.1.0-quality-evidence-graph-20260721" defer></script>
+    <script src="/assets/legacy-antd-calendar.js?v=schedule-drawer-calendar-layer-v1-20260905-period-filter-v1-project-period-picker-v1-milestone-period-bound-v1-period-range-preserve-native-inputs-v1" defer></script>
+    <script src="/assets/legacy-project-delete.js?v=project-recycle-bin-20260717-simple-confirm-v1-toc-dialog-v1" defer></script>
+    <script src="/assets/legacy-activity-details.js?v=activity-table-motion8-server-translation-20260905-self-check-retired-v1" defer></script>
+    <script src="/assets/legacy-gitlab-team.js?v=feishu-avatar-only-v1-20260905-role-receive-policy-v1-feishu-avatar-mapping-sync-v1-20260918-email-identity-lookup-v1-member-source-hidden-v1-member-email-display-v1" defer></script>
+    <script src="/assets/legacy-ci-topology.js?v=ci-file-link-repository-source-v1-20260905-ci-customer-status-v4" defer></script>
+    <script src="/assets/legacy-environment-link-reminder.js?v=environment-link-reminder-v1" defer></script>
+    <script src="/assets/legacy-project-schedule.js?v=feishu-avatar-only-v1-20260905-project-period-picker-v1-milestone-period-bound-v1-schedule-save-feedback-v1-schedule-save-delegated-v1-schedule-save-direct-v1-admin-milestone-readonly-v1" defer></script>
+    <script src="/assets/legacy-project-next-action.js?v=project-next-action-v1" defer></script>
+    <script src="/assets/legacy-project-member-feishu-links.js?v=project-member-feishu-links-v2" defer></script>
+    <script src="/assets/legacy-project-plan-dates.js?v=project-plan-dates-v1-20260905-project-period-picker-v1-milestone-period-bound-v1" defer></script>
+    <script src="/assets/legacy-project-profile-toc.js?v=project-profile-toc-v1" defer></script>
+<script src="/assets/legacy-detail-layout.js?v=detail-stack-fill-20260715" defer></script>
+    <script src="/assets/legacy-home-effects.js?v=preview-fixed-20260706-self-check-retired-v1-group-delivery-copy-v1" defer></script>
+    <script src="/assets/legacy-dashboard-activity-projects.js?v=full-project-list-v1-20260916-sequence-owner-chat-v1" defer></script>
+    <script src="/assets/legacy-ai-chat-modes.js?v=agent-artifact-card-20260707-self-check-retired-v1-ai-chat-progress-v1" defer></script>
+    <script src="/assets/legacy-list-status-polish.js?v=feishu-avatar-only-v2-20260905-period-filter-v2" defer></script>
+    <script src="/assets/legacy-notification-outbox.js?v=notification-outbox-v1-20260717" defer></script>
+    <script src="/assets/legacy-daily-briefing-bridge.js?v=interactive-daily-briefing-20260720-self-check-retired-v1" defer></script>
+    <script src="/assets/legacy-member-directory.js?v=feishu-avatar-only-v1-20260905-member-role-inline-v1-role-receive-policy-v1-feishu-receive-gate-v1-directory-profile-sync-v1-feishu-mapping-state-v1-directory-lifecycle-sync-v1-active-status-hidden-v1-frozen-account-hide-v1-mapped-member-category-v1-non-member-exclusion-v1-page-size-default-10-v1" defer></script>
+    <script src="/assets/legacy-post-launch-reviews.js?v=post-launch-review-v2-20260715" defer></script>
+    <script src="/assets/legacy-notification-workbench.js?v=feishu-avatar-only-v1-20260905-feishu-receive-gate-v1-field-annotations-removed-v1-toc-loader-v1-toc-message-center-v1-notification-true-count-v1-notification-date-range-v1-notification-filter-simplify-v1-notification-server-pagination-v1-notification-inspector-unified-v1-sidebar-layout-control-route-preserve-v1-route-state-release-v1" defer></script>
+    <script src="/assets/legacy-alert-workbench.js?v=feishu-avatar-only-v1-20260905-feishu-receive-gate-v1-queue-columns-v1-field-annotations-removed-v1-toc-loader-v1-toc-workbench-v1-trend-reading-v1-sidebar-layout-control-route-preserve-v1-route-state-release-v1" defer></script>
+    <script src="/assets/legacy-archived-audit.js?v=archived-summary-toc-v1-search-pagination-v1-page-size-select-v1-sidebar-layout-control-route-preserve-v1" defer></script>
+    <script src="/assets/legacy-project-operations.js?v=feishu-avatar-only-v1-20260905-display-translation-v1-self-check-retired-v1-role-receive-policy-v1-feishu-receive-gate-v1-toc-loader-v1-secondary-analysis-v1-health-cards-v1-inspector-on-demand-v1-sidebar-layout-control-route-preserve-v1" defer></script>
+    <script src="/assets/legacy-progress-overview.js?v=progress-overview-v1-20260914-toc-hero-v5-toc-loader-v1-pagination-v1-sidebar-layout-control-route-preserve-v1" defer></script>
+  </head>
+  <body>
+    <div class="dashboard-bootstrap-loader" role="status" aria-live="polite" aria-label="正在准备项目工作台">
+      <div class="dashboard-bootstrap-loader-card">
+        <div class="dashboard-bootstrap-loader-visual" aria-hidden="true">
+          <img src="/image/project-management-icon.png?v=20260907" alt="" />
+          <span class="dashboard-bootstrap-loader-spinner"></span>
+        </div>
+        <span class="dashboard-bootstrap-loader-brand">AI 创新部 · 项目管理平台</span>
+        <strong>正在准备项目工作台</strong>
+        <p>界面就绪后，项目数据将继续更新</p>
+        <span class="dashboard-bootstrap-loader-track" aria-hidden="true"><i></i></span>
+      </div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>

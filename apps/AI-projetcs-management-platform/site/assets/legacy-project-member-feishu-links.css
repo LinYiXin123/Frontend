@@ -1,0 +1,32 @@
+.project-detail-page .basic-card .detail-dl dd .project-member-feishu-link {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 2px;
+  margin: 0 -2px;
+  border-radius: 4px;
+  color: inherit;
+  font: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: background-color .16s ease, color .16s ease;
+}
+
+.project-detail-page .basic-card .detail-dl dd .project-member-feishu-link:hover {
+  color: #0958d9;
+  background: #eaf2ff;
+}
+
+.project-detail-page .basic-card .detail-dl dd .project-member-feishu-link:focus-visible {
+  outline: 2px solid #1677ff;
+  outline-offset: 2px;
+  color: #0958d9;
+  background: #eaf2ff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-detail-page .basic-card .detail-dl dd .project-member-feishu-link {
+    transition: none;
+  }
+}

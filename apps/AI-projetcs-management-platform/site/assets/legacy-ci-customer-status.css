@@ -1,0 +1,389 @@
+.project-detail-page .ci-topology-card.ci-customer-status-card {
+  grid-column: 1 / -1;
+  padding: 0 !important;
+  overflow: hidden;
+  border: 1px solid #d7e2f1 !important;
+  border-top: 2px solid #1677ff !important;
+  border-radius: 8px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.ci-customer-status-card * {
+  box-sizing: border-box;
+}
+
+.ci-customer-summary {
+  position: relative;
+  padding: 20px 22px 18px;
+  box-shadow: inset 2px 0 #7b8ba3;
+}
+
+.ci-customer-summary.tone-success { box-shadow: inset 2px 0 #2eaf7d; }
+.ci-customer-summary.tone-attention { box-shadow: inset 2px 0 #e6a23c; }
+.ci-customer-summary.tone-danger { box-shadow: inset 2px 0 #e64b55; }
+.ci-customer-summary.tone-checking { box-shadow: inset 2px 0 #1677ff; }
+
+.ci-customer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ci-customer-header > div {
+  min-width: 0;
+}
+
+.ci-customer-kicker {
+  display: block;
+  margin-bottom: 6px;
+  color: #1767cf;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+
+.ci-customer-header h2 {
+  margin: 0;
+  color: #21334f;
+  font-size: clamp(18px, 1.55vw, 22px);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+}
+
+.ci-customer-header p {
+  max-width: 720px;
+  margin: 7px 0 0;
+  color: #687991;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.ci-customer-badge {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  color: #5f6f86;
+  background: #f0f3f7;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.tone-success .ci-customer-badge { color: #16815b; background: #eaf8f2; }
+.tone-attention .ci-customer-badge { color: #9a650f; background: #fff5e5; }
+.tone-danger .ci-customer-badge { color: #c43e49; background: #fff0f1; }
+.tone-checking .ci-customer-badge { color: #1767cf; background: #eaf3ff; }
+
+.ci-customer-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 17px;
+  padding: 14px 0;
+  border-top: 1px solid #e5ebf3;
+  border-bottom: 1px solid #e5ebf3;
+}
+
+.ci-customer-facts > div {
+  min-width: 0;
+  padding: 0 18px;
+  border-left: 1px solid #e5ebf3;
+}
+
+.ci-customer-facts > div:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.ci-customer-facts span,
+.ci-customer-facts strong {
+  display: block;
+}
+
+.ci-customer-facts span {
+  color: #8a98aa;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.ci-customer-facts strong {
+  margin-top: 5px;
+  overflow: hidden;
+  color: #31445f;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ci-customer-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.ci-customer-actions button {
+  min-height: 34px;
+  padding: 7px 15px;
+  border: 1px solid #1677ff;
+  border-radius: 4px;
+  color: #fff;
+  background: #1677ff;
+  box-shadow: 2px 2px 0 rgba(22, 119, 255, .28);
+  font-size: 12px;
+  font-weight: 800;
+  transition: background .16s ease, border-color .16s ease, box-shadow .16s ease;
+}
+
+.ci-customer-actions button:hover:not(:disabled) {
+  border-color: #0e68e0;
+  background: #0e68e0;
+  box-shadow: 2px 2px 0 rgba(14, 104, 224, .32);
+}
+
+.ci-customer-actions button:focus-visible,
+.ci-technical-details summary:focus-visible,
+.ci-technical-header a:focus-visible {
+  outline: 2px solid rgba(22, 119, 255, .32);
+  outline-offset: 2px;
+}
+
+.ci-customer-actions button:disabled {
+  cursor: wait;
+  opacity: .58;
+}
+
+.ci-technical-details {
+  border-top: 1px solid #e3eaf3;
+}
+
+.ci-technical-details > summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 22px;
+  color: #51647e;
+  cursor: pointer;
+  list-style: none;
+  background: #fafcff;
+}
+
+.ci-technical-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ci-technical-details > summary span {
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ci-technical-details > summary small {
+  color: #8996a8;
+  font-size: 10px;
+}
+
+.ci-technical-details > summary::after {
+  margin-left: auto;
+  content: "展开";
+  color: #1767cf;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ci-technical-details[open] > summary::after {
+  content: "收起";
+}
+
+.ci-technical-content {
+  padding: 18px;
+  border-top: 1px solid #e3eaf3;
+  background: #f7f9fc;
+}
+
+.ci-technical-content .ci-runtime-panel,
+.ci-technical-content .ci-topology-main,
+.ci-technical-content .ci-target-table {
+  border-color: #dde6f2;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.ci-technical-content .ci-topology-stats {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.ci-technical-content .ci-stat {
+  min-height: 88px;
+  padding: 14px 16px;
+  border-color: #dde6f2;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.ci-technical-content .ci-stat strong {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.ci-technical-content .ci-stat em {
+  margin-top: 7px;
+  padding: 4px 8px;
+}
+
+.ci-technical-content .ci-topology-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.ci-technical-content .ci-topology-main {
+  padding: 16px;
+}
+
+.ci-technical-content .ci-section-title h3 {
+  font-size: 16px;
+}
+
+.ci-technical-content .ci-pipeline {
+  padding: 12px;
+  border-color: #e1e8f2;
+  border-radius: 12px;
+  background: #f8fafd;
+}
+
+.ci-technical-content .ci-stage {
+  min-height: 108px;
+  padding: 14px;
+  border-color: #dce6f3;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: none;
+  animation: none;
+}
+
+.ci-technical-content .ci-stage i {
+  width: 12px;
+  height: 12px;
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+
+.ci-technical-content .ci-stage strong {
+  display: block;
+  font-size: 14px;
+}
+
+.ci-stage-source {
+  display: none;
+}
+
+.ci-technical-content .ci-env-panel,
+.ci-technical-content .ci-empty-env {
+  border-color: #e1e8f2;
+  border-radius: 10px;
+  background: #f8fafd;
+}
+
+.ci-technical-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.ci-technical-header strong {
+  display: block;
+  color: #293b56;
+  font-size: 14px;
+}
+
+.ci-technical-header p {
+  margin: 5px 0 0;
+  color: #7b899d;
+  font-size: 11px;
+}
+
+.ci-technical-header a {
+  flex: none;
+  padding: 7px 10px;
+  border: 1px solid #bfd2ec;
+  border-radius: 7px;
+  color: #1767cf;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .ci-customer-summary {
+    padding: 18px;
+  }
+
+  .ci-customer-header,
+  .ci-technical-header {
+    display: grid;
+  }
+
+  .ci-customer-badge {
+    width: fit-content;
+  }
+
+  .ci-customer-facts {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 4px 0;
+  }
+
+  .ci-customer-facts > div,
+  .ci-customer-facts > div:first-child {
+    padding: 10px 0;
+    border-top: 1px solid #e5ebf3;
+    border-left: 0;
+  }
+
+  .ci-customer-facts > div:first-child {
+    border-top: 0;
+  }
+
+  .ci-customer-facts strong {
+    white-space: normal;
+  }
+
+  .ci-customer-actions button {
+    width: 100%;
+  }
+
+  .ci-technical-details > summary {
+    align-items: flex-start;
+    padding: 12px 18px;
+  }
+
+  .ci-technical-details > summary small {
+    display: none;
+  }
+
+  .ci-technical-content {
+    padding: 14px;
+  }
+
+  .ci-technical-content .ci-topology-stats,
+  .ci-technical-content .ci-pipeline {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ci-customer-actions button {
+    transition: none;
+  }
+}

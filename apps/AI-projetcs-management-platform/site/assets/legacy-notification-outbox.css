@@ -1,0 +1,234 @@
+.notification-outbox-alert {
+  margin: 14px 0;
+  padding: 14px;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  border-left: 3px solid #ef4444;
+  border-radius: 8px;
+  background: rgba(255, 247, 247, 0.88);
+  box-shadow: 0 10px 28px rgba(153, 27, 27, 0.08);
+  animation: notification-outbox-enter 220ms ease-out both;
+}
+
+.notification-outbox-alert-head,
+.notification-outbox-failure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.notification-outbox-alert-head h3,
+.notification-outbox-failure h4 {
+  margin: 0;
+  color: #182033;
+  letter-spacing: 0;
+}
+
+.notification-outbox-alert-head h3 {
+  font-size: 15px;
+}
+
+.notification-outbox-alert-head p,
+.notification-outbox-failure p,
+.notification-outbox-remainder {
+  margin: 4px 0 0;
+  color: #667085;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.notification-outbox-alert-head > span {
+  flex: 0 0 auto;
+  padding: 3px 8px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 999px;
+  color: #c62828;
+  background: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.notification-outbox-failure-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.notification-outbox-failure {
+  min-height: 74px;
+  padding: 11px 12px;
+  border: 1px solid rgba(213, 220, 232, 0.92);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.92);
+  transition: opacity 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+
+.notification-outbox-failure.has-error {
+  border-color: rgba(239, 68, 68, 0.44);
+}
+
+.notification-outbox-failure.is-resolved {
+  opacity: 0.55;
+  transform: translateY(-2px);
+}
+
+.notification-outbox-failure-content {
+  min-width: 0;
+}
+
+.notification-outbox-failure h4 {
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.notification-outbox-failure p {
+  overflow-wrap: anywhere;
+}
+
+.notification-outbox-failure-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-top: 7px;
+  color: #7b8496;
+  font-size: 11px;
+}
+
+.notification-outbox-retry {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  height: 34px;
+  gap: 6px;
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-radius: 7px;
+  color: #b42318;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.notification-outbox-retry:hover:not(:disabled) {
+  border-color: rgba(220, 38, 38, 0.55);
+  background: #fff4f4;
+  transform: translateY(-1px);
+}
+
+.notification-outbox-retry:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.notification-outbox-retry:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.notification-outbox-retry.is-loading > span:first-child {
+  animation: notification-outbox-spin 900ms linear infinite;
+}
+
+.notification-outbox-dialog-overlay {
+  position: fixed;
+  z-index: 12000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.46);
+  animation: notification-outbox-fade 160ms ease-out both;
+}
+
+.notification-outbox-dialog {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  width: min(440px, 100%);
+  padding: 20px;
+  border: 1px solid rgba(203, 213, 225, 0.95);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.24);
+  animation: notification-outbox-dialog-enter 180ms ease-out both;
+}
+
+.notification-outbox-dialog-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #b42318;
+  background: #fee4e2;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.notification-outbox-dialog h3 {
+  margin: 2px 0 0;
+  color: #182033;
+  font-size: 17px;
+  letter-spacing: 0;
+}
+
+.notification-outbox-dialog p {
+  margin: 8px 0 0;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.notification-outbox-dialog-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+@keyframes notification-outbox-enter {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes notification-outbox-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes notification-outbox-dialog-enter {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes notification-outbox-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 720px) {
+  .notification-outbox-failure {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .notification-outbox-retry {
+    align-self: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notification-outbox-alert,
+  .notification-outbox-dialog-overlay,
+  .notification-outbox-dialog,
+  .notification-outbox-retry,
+  .notification-outbox-failure {
+    animation: none !important;
+    transition: none !important;
+  }
+}

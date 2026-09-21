@@ -1,0 +1,713 @@
+.side-card.post-launch-review-mounted {
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border-color: rgba(199, 216, 242, .92);
+  background: linear-gradient(150deg, rgba(255, 255, 255, .98), rgba(244, 249, 255, .94));
+  box-shadow: 0 18px 46px rgba(31, 77, 152, .10), inset 0 1px rgba(255, 255, 255, .95);
+}
+
+.side-card.post-launch-review-mounted > :not(.post-launch-review-root) {
+  display: none !important;
+}
+
+.post-launch-review-root {
+  display: grid;
+  gap: 11px;
+  min-height: 286px;
+  padding: 16px;
+  color: #182b4d;
+}
+
+.post-launch-review-head,
+.post-launch-review-foot,
+.post-launch-review-row,
+.post-launch-review-dialog header,
+.post-launch-review-detail-head,
+.post-launch-review-resolution > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.post-launch-review-head > div {
+  display: grid;
+  gap: 3px;
+}
+
+.post-launch-review-head span,
+.post-launch-review-dialog header span,
+.post-launch-review-detail-head span {
+  color: #2f70ff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .04em;
+}
+
+.post-launch-review-head h3,
+.post-launch-review-dialog h2,
+.post-launch-review-detail h3,
+.post-launch-review-detail h4 {
+  margin: 0;
+  color: #172b4d;
+  letter-spacing: -.02em;
+}
+
+.post-launch-review-head h3 {
+  font-size: 17px;
+}
+
+.post-launch-review-head > b,
+.post-launch-review-row em,
+.post-launch-review-detail-head em,
+.post-launch-review-data-gap strong {
+  flex: none;
+  border: 1px solid rgba(47, 112, 255, .18);
+  border-radius: 999px;
+  background: #edf5ff;
+  color: #2f70ff;
+  padding: 5px 9px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.post-launch-review-head > b.has-due,
+.post-launch-review-row em.tone-critical,
+.post-launch-review-detail-head em.tone-critical {
+  border-color: rgba(239, 68, 68, .22);
+  background: #fff3f3;
+  color: #e33939;
+}
+
+.post-launch-review-row em.tone-attention,
+.post-launch-review-detail-head em.tone-attention {
+  border-color: rgba(245, 158, 11, .26);
+  background: #fff8ea;
+  color: #b86b00;
+}
+
+.post-launch-review-row em.tone-healthy,
+.post-launch-review-detail-head em.tone-healthy {
+  border-color: rgba(16, 185, 129, .24);
+  background: #edfbf5;
+  color: #07865c;
+}
+
+.post-launch-review-intro {
+  margin: 0 !important;
+  color: #728099 !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+}
+
+.post-launch-review-metrics,
+.post-launch-review-dialog-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.post-launch-review-metrics > span,
+.post-launch-review-dialog-metrics > span {
+  display: grid;
+  gap: 3px;
+  border: 1px solid rgba(205, 220, 244, .84);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .82);
+  padding: 9px 10px;
+}
+
+.post-launch-review-metrics b,
+.post-launch-review-dialog-metrics b {
+  color: #1e5edb;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.post-launch-review-metrics small,
+.post-launch-review-dialog-metrics small {
+  color: #74839b;
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.post-launch-review-list {
+  display: grid;
+  gap: 7px;
+}
+
+.post-launch-review-row {
+  width: 100%;
+  border: 1px solid rgba(211, 224, 245, .88);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .76);
+  padding: 9px 10px;
+  text-align: left;
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1), border-color .2s ease, box-shadow .2s ease;
+}
+
+.post-launch-review-row:hover,
+.post-launch-review-row:focus-visible {
+  border-color: rgba(47, 112, 255, .54);
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(47, 112, 255, .12);
+}
+
+.post-launch-review-row > span,
+.post-launch-review-ledger button > span {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.post-launch-review-row strong,
+.post-launch-review-ledger strong {
+  overflow: hidden;
+  color: #203556;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-launch-review-row small,
+.post-launch-review-ledger small {
+  color: #8490a5;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.post-launch-review-empty {
+  display: grid;
+  gap: 5px;
+  border: 1px dashed rgba(146, 176, 224, .6);
+  border-radius: 14px;
+  background: rgba(246, 250, 255, .8);
+  padding: 12px;
+}
+
+.post-launch-review-empty strong {
+  color: #31527e;
+  font-size: 12px;
+}
+
+.post-launch-review-empty span {
+  color: #7b899f;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.post-launch-review-foot {
+  align-items: flex-end;
+}
+
+.post-launch-review-foot > span {
+  max-width: 166px;
+  color: #8b6a22;
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.post-launch-review-foot button,
+.post-launch-review-error button,
+.post-launch-review-dialog header button,
+.post-launch-review-submit {
+  border: 1px solid rgba(47, 112, 255, .24);
+  border-radius: 10px;
+  background: #edf5ff;
+  color: #2868ee;
+  padding: 7px 10px;
+  font-size: 10px;
+  font-weight: 900;
+  transition: background .2s ease, color .2s ease, transform .2s cubic-bezier(.22, 1, .36, 1);
+}
+
+.post-launch-review-foot button:hover,
+.post-launch-review-error button:hover,
+.post-launch-review-dialog header button:hover {
+  background: #2868ee;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.post-launch-review-loading,
+.post-launch-review-error {
+  align-content: start;
+}
+
+.post-launch-review-skeleton {
+  display: grid;
+  gap: 9px;
+  margin-top: 8px;
+}
+
+.post-launch-review-skeleton i {
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #edf3fb 20%, #f9fbfe 50%, #edf3fb 80%);
+  background-size: 220% 100%;
+  animation: post-launch-shimmer 1.35s linear infinite;
+}
+
+.post-launch-review-loading p,
+.post-launch-review-error p {
+  color: #7a879b;
+  font-size: 11px;
+}
+
+html.post-launch-review-dialog-open,
+html.post-launch-review-dialog-open body {
+  overflow: hidden;
+}
+
+.post-launch-review-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 1600;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.post-launch-review-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(9, 23, 48, .42);
+  backdrop-filter: blur(8px);
+}
+
+.post-launch-review-panel {
+  position: relative;
+  width: min(920px, calc(100vw - 48px));
+  max-height: min(820px, calc(100vh - 48px));
+  overflow: auto;
+  border: 1px solid rgba(203, 219, 244, .95);
+  border-radius: 26px;
+  background: radial-gradient(circle at 90% 4%, rgba(84, 132, 255, .12), transparent 30%), #f7faff;
+  padding: 24px;
+  box-shadow: 0 34px 100px rgba(15, 40, 84, .28), inset 0 1px rgba(255, 255, 255, .95);
+  animation: post-launch-panel-in .28s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.post-launch-review-dialog header {
+  align-items: flex-start;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(205, 220, 244, .85);
+}
+
+.post-launch-review-dialog header > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+
+.post-launch-review-dialog header > div:last-child {
+  display: flex;
+  gap: 8px;
+}
+
+.post-launch-review-dialog h2 {
+  font-size: 25px;
+}
+
+.post-launch-review-dialog header p {
+  margin: 0;
+  color: #718099;
+  font-size: 12px;
+}
+
+.post-launch-review-dialog-metrics {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin: 18px 0;
+}
+
+.post-launch-review-dialog-metrics > span {
+  padding: 12px 14px;
+}
+
+.post-launch-review-dialog-metrics b {
+  font-size: 24px;
+}
+
+.post-launch-review-ledger {
+  display: grid;
+  gap: 9px;
+}
+
+.post-launch-review-ledger button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  border: 1px solid rgba(205, 220, 244, .9);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .82);
+  padding: 13px 15px;
+  text-align: left;
+  transition: border-color .2s ease, transform .2s cubic-bezier(.22, 1, .36, 1), box-shadow .2s ease;
+}
+
+.post-launch-review-ledger button:hover {
+  border-color: rgba(47, 112, 255, .5);
+  transform: translateX(3px);
+  box-shadow: 0 12px 30px rgba(47, 112, 255, .1);
+}
+
+.post-launch-review-ledger em {
+  color: #2868ee;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.post-launch-review-ledger-empty {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  border: 1px dashed rgba(146, 176, 224, .7);
+  border-radius: 20px;
+  color: #365a88;
+  text-align: center;
+}
+
+.post-launch-review-ledger-empty p {
+  margin: -70px 0 0;
+  color: #7b899f;
+  font-size: 12px;
+}
+
+.post-launch-review-detail {
+  display: grid;
+  gap: 16px;
+}
+
+.post-launch-review-detail-head {
+  align-items: flex-start;
+}
+
+.post-launch-review-detail-head > div {
+  display: grid;
+  gap: 5px;
+}
+
+.post-launch-review-detail h3 {
+  font-size: 20px;
+}
+
+.post-launch-review-detail-head p,
+.post-launch-review-source-grid p,
+.post-launch-review-recommendation p,
+.post-launch-review-resolution p {
+  margin: 0;
+  color: #687890;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.post-launch-review-source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.post-launch-review-source-grid section {
+  display: grid;
+  gap: 12px;
+  border: 1px solid rgba(205, 220, 244, .88);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .82);
+  padding: 15px;
+}
+
+.post-launch-review-source-grid section > div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.post-launch-review-source-grid section > div span {
+  display: grid;
+  gap: 4px;
+  border-radius: 11px;
+  background: #f1f6fd;
+  padding: 9px;
+}
+
+.post-launch-review-source-grid small {
+  color: #7c8aa0;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.post-launch-review-source-grid b {
+  color: #245ec8;
+  font-size: 17px;
+}
+
+.post-launch-review-recommendation,
+.post-launch-review-data-gap,
+.post-launch-review-resolution,
+.post-launch-review-accountability {
+  display: grid;
+  gap: 7px;
+  border-radius: 16px;
+  padding: 13px 15px;
+}
+
+.post-launch-review-accountability {
+  grid-template-columns: auto auto minmax(0, 1fr);
+  align-items: center;
+  border: 1px solid rgba(47, 112, 255, .18);
+  background: rgba(246, 249, 255, .88);
+}
+
+.post-launch-review-accountability span,
+.post-launch-review-accountability small {
+  color: #74839a;
+  font-size: 11px;
+}
+
+.post-launch-review-accountability strong {
+  color: #235abf;
+  font-size: 12px;
+}
+
+.post-launch-review-recommendation {
+  border: 1px solid rgba(47, 112, 255, .22);
+  background: rgba(237, 245, 255, .8);
+}
+
+.post-launch-review-recommendation > span {
+  color: #2868ee;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.post-launch-review-data-gap {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  border: 1px solid rgba(245, 158, 11, .22);
+  background: rgba(255, 249, 235, .78);
+  color: #8a6a27;
+  font-size: 11px;
+}
+
+.post-launch-review-data-gap strong {
+  border-color: rgba(245, 158, 11, .24);
+  background: #fff4d8;
+  color: #a46500;
+}
+
+.post-launch-review-resolution {
+  border: 1px solid rgba(16, 185, 129, .22);
+  background: rgba(237, 251, 245, .82);
+}
+
+.post-launch-review-resolution span {
+  color: #07865c;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.post-launch-review-resolution strong {
+  color: #547064;
+  font-size: 11px;
+}
+
+.post-launch-review-action-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(120px, 1fr) minmax(120px, 1fr);
+  gap: 8px;
+  margin: 3px 0 0;
+}
+
+.post-launch-review-action-summary > div {
+  display: grid;
+  gap: 3px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, .72);
+  padding: 9px 10px;
+}
+
+.post-launch-review-action-summary dt {
+  color: #6f847b;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.post-launch-review-action-summary dd {
+  margin: 0;
+  color: #355e50;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.post-launch-review-form {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid rgba(205, 220, 244, .88);
+  padding-top: 16px;
+}
+
+.post-launch-review-form fieldset,
+.post-launch-review-form label {
+  display: grid;
+  gap: 8px;
+  border: 0;
+}
+
+.post-launch-review-form legend,
+.post-launch-review-form label > span {
+  color: #415879;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.post-launch-review-action-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  border: 1px solid rgba(245, 158, 11, .24);
+  border-radius: 16px;
+  background: rgba(255, 249, 235, .72);
+  padding: 13px;
+}
+
+.post-launch-review-action-fields label:first-child {
+  grid-column: 1 / -1;
+}
+
+.post-launch-outcomes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.post-launch-outcomes button {
+  border: 1px solid rgba(205, 220, 244, .9);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .82);
+  color: #61728d;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.post-launch-outcomes button.selected {
+  border-color: rgba(47, 112, 255, .72);
+  background: #edf5ff;
+  color: #2868ee;
+  box-shadow: inset 0 0 0 1px rgba(47, 112, 255, .12);
+}
+
+.post-launch-review-form textarea,
+.post-launch-review-form input,
+.post-launch-review-form select {
+  width: 100%;
+  border: 1px solid rgba(190, 208, 238, .95);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .9);
+  padding: 11px 12px;
+  color: #263b5c;
+  font-size: 12px;
+  line-height: 1.6;
+  outline: none;
+}
+
+.post-launch-review-form textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.post-launch-review-form select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #5f7595 50%), linear-gradient(135deg, #5f7595 50%, transparent 50%);
+  background-position: calc(100% - 17px) 50%, calc(100% - 12px) 50%;
+  background-repeat: no-repeat;
+  background-size: 5px 5px, 5px 5px;
+  padding-right: 32px;
+}
+
+.post-launch-review-form textarea:focus,
+.post-launch-review-form input:focus,
+.post-launch-review-form select:focus {
+  border-color: #2f70ff;
+  box-shadow: 0 0 0 3px rgba(47, 112, 255, .12);
+}
+
+.post-launch-review-submit {
+  justify-self: end;
+  background: linear-gradient(135deg, #2f70ff, #5b55f3);
+  color: #fff;
+  padding: 10px 16px;
+  box-shadow: 0 12px 26px rgba(47, 112, 255, .22);
+}
+
+.post-launch-review-submit:disabled {
+  opacity: .62;
+}
+
+.post-launch-review-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 1800;
+  max-width: min(420px, calc(100vw - 32px));
+  border: 1px solid rgba(16, 185, 129, .25);
+  border-radius: 14px;
+  background: rgba(239, 253, 247, .96);
+  color: #087c58;
+  padding: 11px 15px;
+  font-size: 12px;
+  font-weight: 900;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 12px);
+  transition: opacity .22s ease, transform .22s cubic-bezier(.22, 1, .36, 1);
+  box-shadow: 0 18px 44px rgba(15, 69, 50, .18);
+}
+
+.post-launch-review-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.post-launch-review-toast.is-error {
+  border-color: rgba(239, 68, 68, .26);
+  background: rgba(255, 243, 243, .97);
+  color: #c93232;
+}
+
+@keyframes post-launch-shimmer {
+  to { background-position: -220% 0; }
+}
+
+@keyframes post-launch-panel-in {
+  from { opacity: 0; transform: translateY(14px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (max-width: 760px) {
+  .post-launch-review-dialog { padding: 12px; }
+  .post-launch-review-dialog header { display: grid; }
+  .post-launch-review-dialog-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .post-launch-review-source-grid { grid-template-columns: 1fr; }
+  .post-launch-review-data-gap { grid-template-columns: 1fr; }
+  .post-launch-review-accountability,
+  .post-launch-review-action-fields,
+  .post-launch-review-action-summary { grid-template-columns: 1fr; }
+  .post-launch-review-action-fields label:first-child { grid-column: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-launch-review-root *,
+  .post-launch-review-dialog *,
+  .post-launch-review-toast { animation: none !important; transition: none !important; }
+}
